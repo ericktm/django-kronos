@@ -3,7 +3,8 @@ import os
 from setuptools import setup
 
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
-execfile('kronos/version.py')
+
+exec(open("kronos/version.py").read())
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read()
